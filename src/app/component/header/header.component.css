@@ -1,0 +1,14 @@
+#searchbar {
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+    font-size: 15px;
+    padding-left: 6px;
+}
+#serch-icon {
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    top: 21px;
+    color: blue;
+}
