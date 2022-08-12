@@ -1,7 +1,7 @@
 <div id="cardtop" class="card-top container-fluid">
     <div id="topitemlist" class="container d-flex">
         <div style="text-align: center;" class="item">
-            <a>
+            <a (click)="filter('')">
                 <img style="width: 100px;" src="https://media.istockphoto.com/photos/birthday-gift-christmas-present-red-box-isolated-on-white-picture-id1053404714?k=20&m=1053404714&s=612x612&w=0&h=THHc9RXxWdm2ZoPuzaMW3ePeiMfNN4KjJ7q0MwWe7Pg=">
                 <h6>All Products</h6>
             </a>
@@ -9,7 +9,7 @@
     </div>
     <div class="container d-flex">
         <div class="item">
-            <a>
+            <a  (click)="filter('electronics')" >
                 <img style="width: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi1JYBzZs_nwKAwGgBCthhlR_3xO-gXvDkBw&usqp=CAU">
                 <h6>Electronics</h6>
             </a>
@@ -17,7 +17,7 @@
     </div>
     <div class="container d-flex">
         <div class="item">
-            <a>
+            <a (click)="filter('fashion')">
                 <img style="width: 100px;" src="https://thumbs.dreamstime.com/b/%CE%BD%CE%AD%CE%B1-%CF%80%CE%B5%CF%81%CE%B9%CF%83%CF%84%CE%B1%CF%83%CE%B9%CE%B1%CE%BA%CE%AC-%CF%80%CF%81%CF%8C%CF%84%CF%85%CF%80%CE%B1-%CE%BC%CF%8C%CE%B4%CE%B1%CF%82-%CF%80%CE%BF%CF%85-%CE%B8%CE%AD%CF%84%CE%BF%CF%85%CE%BD-%CF%83%CF%84%CE%BF-%CF%83%CF%84%CE%BF%CF%8D%CE%BD%CF%84%CE%B9%CE%BF-38190448.jpg">
                 <h6>Fashion</h6>
             </a>
@@ -25,7 +25,7 @@
     </div>
     <div class="container d-flex">
         <div class="item">
-            <a>
+            <a (click)="filter('jewelery')">
                 <img style="width: 80px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0tq_MszjNdVS7YRtQhLkmuXRdY7yEA68AO9zLLY_rNGaqvNH2YOZxJja5j8eaJoKFLXY&usqp=CAU">
                 <h6>jewllery</h6>
             </a>
@@ -34,7 +34,8 @@
 </div>
 <div class="container">
 <div class="row">
-    <ng-container *ngFor="let item of productList | filter:searchKey: 'title'">    
+    <ng-container *ngFor="let item of filterCategory | filter:searchKey: 'title'">   
+        <!-- here initailly productList is there in place of filterCategory   -->
         <!-- here title is the propname / searchKey is the filterString / let item of product list acts as a value what it mentoned in shared.filter.ts -->
         <div id="itemcard" class="card col-md-3">
             <img id="cardimg" src="{{item.image}}" alt="">
