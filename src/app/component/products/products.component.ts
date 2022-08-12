@@ -36,10 +36,10 @@ export class ProductsComponent implements OnInit {
           this.cartService.addtoCart(item);
   }
 
-  filter(category:string) {                               // fiter the items by clicking category  buttons
+  filter(category:string) {                               // fiter the items by clicking category buttons
     this.filterCategory = this.productList
     .filter((a:any)=>{
-        if(a.category == category || category==''){
+        if(a.category == category || category == ''){
           return a;
         }
     })
