@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div id="loginbox" class="col-sm-4" style="margin-top: 6%; ">
+        
+        <h2 style="text-align: center;">Login </h2>
+        <h6 style="text-align: center;">Enter your username and password</h6>
+        <form [formGroup]="loginForm"  style="margin-top: 5%;"  (ngSubmit)="login()">
+            <div class="sm-3">
+              <label for="exampleInputEmail1">User Email</label>
+              <input formControlName="email" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter UserName">
+              <small  id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="sm-3">
+              <label for="exampleInputPassword1">Password</label>
+              <input formControlName="password"   type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+           
+            <button style="margin-top: 3%;margin-bottom: 1%;" type="submit" class="btn btn-primary">Login</button>
+           
+            <a  routerLink="/signup" type="button" style="padding-left: 3%;text-decoration: none;">New User/SignUp</a>
+         </form>
+         
+    </div>
+    <div class="col-sm-4"></div>
+</div>

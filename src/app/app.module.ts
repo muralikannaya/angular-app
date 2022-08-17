@@ -9,6 +9,8 @@ import { ProductsComponent } from './component/products/products.component';
 import { HttpClientModule  } from '@angular/common/http';
 import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { LoginComponent } from './component/login/login.component';
+import { SignupComponent } from './component/signup/signup.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
     CartComponent,
     ProductsComponent,
     FilterPipe,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,7 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
   ],
   providers: [],
   bootstrap: [AppComponent, HeaderComponent, CartComponent,
-    ProductsComponent]
+    ProductsComponent,LoginComponent, SignupComponent]
 })
 export class AppModule { }
 

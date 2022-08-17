@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 1
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 2
+    },
+    {
+      "fullname": "mur",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 3
+    },
+    {
+      "fullname": "murali",
+      "email": "murali",
+      "password": "fefwfwfwfw",
+      "mobile": "",
+      "id": 4
+    },
+    {
+      "fullname": "murali",
+      "email": "murali@gamil.com",
+      "password": "murali@gamil.com",
+      "mobile": 9704415444,
+      "id": 5
+    },
+    {
+      "fullname": "raju",
+      "email": "raju@gmail.com",
+      "password": "raju123",
+      "mobile": 464184844444,
+      "id": 6
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -7,29 +7,40 @@
     background: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,0.2);
-    border-radius: 25rem;
+    /* border-radius: 25rem; */
 }
 /* #topitemlist {
     display: flex;
     flex-direction: row;
 } */
+
+.item {
+    color:rgb(16, 16, 73);
+    
+}
 .item a:hover {
-color: blue;
+color: orangered
 }
 #cardimg {
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: 50%;
     margin-bottom: 15px;
     transform: scale(1.1);
    
 }
 
 #cardimg :hover {
+    display: cover;
     transform: scale(1.5); 
     transition: transform .2s; 
 }
 
 #itemcard {
     padding: 20px;
+    padding-bottom: 0px;
     margin: 30px;
+    box-shadow: 5px 5px 5px 5px;
+}
+#itemrepeat {
+    box-shadow: 5px, 5px, 2px,2px;
 }

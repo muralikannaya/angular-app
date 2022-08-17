@@ -1,6 +1,6 @@
 #searchbar {
     border-radius: 3px;
-    width: 600px;
+    width: 81%;
     margin-left: 20px;
     font-size: 15px;
     padding-left: 6px;
@@ -8,7 +8,18 @@
 #serch-icon {
     position: absolute;
     z-index: 1;
-    right: 50%;
+    right: 77%;
     top: 21px;
-    color: blue;
+    color: rgb(16, 16, 73);
 }
+#carticon {
+    color: white;
+}
+
+#header {
+    background-color: rgb(16, 16, 73);
+}
+#logo{
+    background: transparent;
+}
+

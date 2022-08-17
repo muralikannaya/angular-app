@@ -27,14 +27,15 @@
         <div class="item">
             <a (click)="filter('jewelery')">
                 <img style="width: 80px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0tq_MszjNdVS7YRtQhLkmuXRdY7yEA68AO9zLLY_rNGaqvNH2YOZxJja5j8eaJoKFLXY&usqp=CAU">
-                <h6>jewllery</h6>
+                <h6>Jewellery</h6>
             </a>
         </div>
     </div>
 </div>
-<div class="container">
+<div style="background-color: #DEDEDE;">
+<div class="container" >
 <div class="row">
-    <ng-container *ngFor="let item of filterCategory | filter:searchKey: 'title'">   
+    <ng-container style="padding-bottom: 0;" id="itemrepeat" *ngFor="let item of filterCategory | filter:searchKey: 'title'">   
         <!-- here initailly productList is there in place of filterCategory   -->
         <!-- here title is the propname / searchKey is the filterString / let item of product list acts as a value what it mentoned in shared.filter.ts -->
         <div id="itemcard" class="card col-md-3">
@@ -42,9 +43,10 @@
             <h5 style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
             <p style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
             <p><strong>Price:</strong>${{item.price}}</p>
-            <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+            <button class="btn " style="background-color:rgb(16, 16, 73); color: orangered;" (click)=addtocart(item)>Add to cart</button>
         </div>
     </ng-container>
     
+</div>
 </div>
 </div>
