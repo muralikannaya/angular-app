@@ -1,5 +1,5 @@
-<header>
-    <div id="header" class="navbar  shadow-sm">
+<header >
+    <div  id="header" class="navbar  shadow-sm">
         <div style="color: white;" class="navbar-brand align-item-center d-flex">
             
                 <img id="logo" src="../assets/images/logo.png" alt="" srcset=""> 
@@ -11,8 +11,10 @@
             </div>
             <span><i id="serch-icon" class="fas fa-search  "></i></span>
         </div>
-        <button routerLink="login" >LogIn</button>
-       <button  routerLink="cart" class="btn">
+        <a style="text-decoration: none; font-size: 24px;color: white;" routerLink="/login" >
+            <i class="fa fa-lock-open"></i>
+            LogIn</a>
+       <button  routerLink="/cart" class="btn">
         <i id="carticon" class="fas fa-2x fa-cart-plus"></i>
         <div style="font-size: 10px;" id="noofitems" class="badge bg-danger">{{totalItem}}</div>
        </button>

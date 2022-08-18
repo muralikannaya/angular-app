@@ -13,10 +13,11 @@ import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    HeaderComponent,   
     CartComponent,
     ProductsComponent,
     FilterPipe,

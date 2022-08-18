@@ -48,6 +48,13 @@
       "password": "raju123",
       "mobile": 464184844444,
       "id": 6
+    },
+    {
+      "fullname": "narayana",
+      "email": "narayana@gmail.com",
+      "password": "12345",
+      "mobile": 55465434,
+      "id": 7
     }
   ],
   "profile": {

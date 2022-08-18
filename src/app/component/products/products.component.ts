@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/service/api.service';
 import { CartService } from 'src/app/service/cart.service';
 
@@ -10,10 +11,15 @@ import { CartService } from 'src/app/service/cart.service';
 export class ProductsComponent implements OnInit {
    public productList :any ;
    public filterCategory : any ;
+   public totalItem : number = 0;
     searchKey:string = "";
-  constructor(private api : ApiService, private cartService : CartService) { }           // here inject services
+  constructor(private api : ApiService, private cartService : CartService, private router:Router) { }           // here inject services
 
-  ngOnInit(): void {                    
+  ngOnInit(): void {  
+    this.cartService.getProducts()
+    .subscribe(res=>{
+     this.totalItem = res.length;
+    })                  
     this.api.getProduct()                   // method calling to items
     .subscribe(res=>{                     
       this.productList = res;           //storing the calling items
@@ -44,5 +50,12 @@ export class ProductsComponent implements OnInit {
         }
     })
   }
+  
+  iconStyle = 'normalStyle';
+
+  like () {
+    this.iconStyle = 'likeStyle';
+  }
+
 
 }
