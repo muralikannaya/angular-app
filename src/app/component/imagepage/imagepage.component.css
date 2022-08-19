@@ -1,0 +1,12 @@
+#nitemselector {
+   width: 100%;
+}
+
+#addcartbtn {
+   border-radius: 5px;
+   background-color: #4ea6bc;
+    color:#ffff;
+    width: 124px;
+    border: 0px;
+    padding-bottom: 6px;
+}

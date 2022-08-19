@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/service/api.service';
 import { CartService } from 'src/app/service/cart.service';
+import { ImageService } from 'src/app/service/image.service';
 
 @Component({
   selector: 'app-products',
@@ -12,14 +13,24 @@ export class ProductsComponent implements OnInit {
    public productList :any ;
    public filterCategory : any ;
    public totalItem : number = 0;
+   public cartMoveStyle : any ;
     searchKey:string = "";
-  constructor(private api : ApiService, private cartService : CartService, private router:Router) { }           // here inject services
+  constructor(private api : ApiService, private cartService : CartService, private router:Router, private imgService:ImageService) { }           // here inject services
 
-  ngOnInit(): void {  
+  ngOnInit(): void { 
+    this.cartMoveStyle = 'cartSideStyle';
     this.cartService.getProducts()
     .subscribe(res=>{
      this.totalItem = res.length;
-    })                  
+    
+    
+    }) 
+    
+    // this.cartMoveStyle = 'cartSideStyle';
+    // this.cartService.getProducts()
+    // .subscribe(res=>{
+    //  this.cartMoveStyle = 'moveStyle';
+    // })  
     this.api.getProduct()                   // method calling to items
     .subscribe(res=>{                     
       this.productList = res;           //storing the calling items
@@ -37,9 +48,20 @@ export class ProductsComponent implements OnInit {
       this.searchKey = val;                                      // here search is the  behaviour in cartService to get  the value what cartService sends trough service varible
     })
   }
-
+   
   addtocart(item: any){
           this.cartService.addtoCart(item);
+          // this.cartMoveStyle = 'moveStyle'?  'moveStyle': 'cartSideStyle';
+          if (this.cartMoveStyle == 'cartSideStyle'){
+            this.cartMoveStyle = 'moveStyle';
+          } else {
+            this.cartMoveStyle = 'cartSideStyle';
+          }
+
+  }
+
+  showtoImg(item: any){
+    this.imgService.showtoImg(item);
   }
 
   filter(category:string) {                               // fiter the items by clicking category buttons

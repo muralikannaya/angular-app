@@ -54,24 +54,58 @@ color: orangered
     /* z-index: 1; */
     top: 48%;
     right: 1%;
-    background-color: rgb(16, 16, 73);
+    background-color: #4ea6bc;
     text-align: center;
     align-items: center;
     border-radius: 50%;
     display: flex;
-    width: 76px;
-    height:76px;
+    width: 79px;
+    height:79px;
 
 }
 
-#cartsider:hover {
+.cartSideStyle {
+    position: fixed;
+    top: 48%;
+    right: 1%;
+    background-color: #4ea6bc;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    width: 79px;
+    height:79px;
+    transform: scale(1); 
+    transition: transform 0.5s;
+}
+
+.moveStyle {
+    transform: scale(1.2); 
+    transition: transform 0.5s; 
+    fill-opacity: 0.1;
+    position: fixed;
+    /* z-index: 1; */
+    top: 48%;
+    right: 1%;
+   
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    width: 79px;
+    height:79px;
+}
+
+/* #cartsider:hover {
     transform: scale(1.2); 
     transition: transform .2s; 
     fill-opacity: 0.1;
-}
+} */
+
+
 
 .normalStyle{
-    color: rgb(16, 16, 73);;
+    color: #4ea6bc;
 }
 
 .likeStyle {

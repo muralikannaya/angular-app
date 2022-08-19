@@ -1,0 +1,27 @@
+.rental-manager-progress-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 10px solid #024a92;
+    padding-top: 15px;
+    margin-top: 55px;
+  }
+  
+  
+  .active{
+    background-color: #fff !important;
+  }
+  
+  .rental-manager-progress-bar-container div {
+    background-color: #024a92;
+    font-weight: bold;
+    color: #7ea5cc;
+    border: 2px solid #024a92;
+    margin-top: -45px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 99;
+  }

@@ -11,6 +11,14 @@ import { FilterPipe } from './shared/filter.pipe';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { ImagepageComponent } from './component/imagepage/imagepage.component';
+import { PaymentpageComponent } from './component/paymentpage/paymentpage.component';
+import { PtmheaderComponent } from './component/ptmheader/ptmheader.component';
+import { Ptmpage1Component } from './component/ptmpage1/ptmpage1.component';
+import { Ptmpage2Component } from './component/ptmpage2/ptmpage2.component';
+import { Ptmpage3Component } from './component/ptmpage3/ptmpage3.component';
+import { Ptmpage4Component } from './component/ptmpage4/ptmpage4.component';
 
 
 
@@ -23,6 +31,14 @@ import { SignupComponent } from './component/signup/signup.component';
     FilterPipe,
     LoginComponent,
     SignupComponent,
+    FooterComponent,
+    ImagepageComponent,
+    PaymentpageComponent,
+    PtmheaderComponent,
+    Ptmpage1Component,
+    Ptmpage2Component,
+    Ptmpage3Component,
+    Ptmpage4Component,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +48,10 @@ import { SignupComponent } from './component/signup/signup.component';
   ],
   providers: [],
   bootstrap: [AppComponent, HeaderComponent, CartComponent,
-    ProductsComponent,LoginComponent, SignupComponent]
+    ProductsComponent,LoginComponent, SignupComponent,FooterComponent,ImagepageComponent, PtmheaderComponent,Ptmpage1Component,
+    Ptmpage2Component,
+    Ptmpage3Component,
+    Ptmpage4Component,]
 })
 export class AppModule { }
 
