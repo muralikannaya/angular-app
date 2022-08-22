@@ -10,6 +10,8 @@ export class Ptmpage3Component implements OnInit {
   constructor() { }
   public cardThing: boolean = false ;
   public upiThing: boolean = false ;
+  public netThing: boolean = false ;
+  public enterOtp : boolean = false;
 
   ngOnInit(): void {
   }
@@ -18,10 +20,22 @@ export class Ptmpage3Component implements OnInit {
   atmCard() {
     this.cardThing = true;
     this.upiThing = false;
+    this.netThing = false;
   }
 
   upiOpen() {
     this.cardThing = false;
     this.upiThing = true;
+    this.netThing = false;
+  }
+
+  netOpen() {
+    this.cardThing = false;
+    this.netThing = true;
+    this.upiThing = false;
+  }
+
+  getOtp () {
+    this.enterOtp = true;
   }
 }

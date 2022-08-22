@@ -11,5 +11,9 @@ export class PtmheaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+iconStyle = 'number ' ;
+next() {
+  this.iconStyle = 'numberActive ' ;
+}
 
 }

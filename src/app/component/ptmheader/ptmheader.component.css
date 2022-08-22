@@ -98,3 +98,26 @@ body {
     bottom: -20px;
   }
 }
+
+.number {
+  display: flex;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: #bcc8d4;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s;
+
+}
+
+.numberActive {
+  background-color:greenyellow;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .2s;
+  display: flex;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}

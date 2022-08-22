@@ -2,23 +2,33 @@
 <div class="container">
   <section class="step-indicator">
       <div class="step step1 active">
-         <input type="radio" id="html" name="fav_language" value="HTML">
+        <div class="stage">
+          <div id="number"  class="number">1</div>
+        </div>
         <p>Login</p>
       </div>
     <div class="indicator-line "></div>
     <div class="step step2">
-       <input type="radio" id="html" name="fav_language" value="HTML">
+      <div class="stage">
+        <div id="number" [ngClass]="[iconStyle]">2</div>
+      </div>
       <p>Shipping</p>
     </div>
     <div class="indicator-line"></div>
     <div class="step step3">
-       <input type="radio" id="html" name="fav_language" value="HTML">
+      <div class="stage">
+        <div id="number"  class="number">3</div>
+      </div>
        <p>Payment</p>
     </div>
     <div class="indicator-line"></div>
     <div class="step step3">
-       <input type="radio" id="html" name="fav_language" value="HTML">
+      <div class="stage">
+        <div id="number"  class="number">4</div>
+      </div>
        <p>completed</p>
     </div>
   </section>
 </div>
+
+<button   (click)="next()">next</button>
