@@ -1,0 +1,23 @@
+<ng-container  *ngIf="products.length !=0">
+<div style="margin-bottom: 4px;" class="row" *ngFor="let item of products; let i = index">
+    <div class="col-sm-4">
+        <img style="width: 60%;" src="{{item.image}}" alt="">
+    </div>
+
+    <div class="col-sm-8">
+      <h6>{{item.title}}</h6>
+      <div >
+        <div class="row">
+            <div class="col-sm-4"><p>{{item.price}}</p></div>
+            <div class="col-sm-4"><span>1</span></div>
+            <div class="col-sm-4"><p>{{item.price}}</p></div></div>
+        </div>  
+    </div>
+</div><hr>
+<div class="row">
+    <h6 style="color:rgb(161, 148, 148) ;">Shipping fee:  <span style="color: black;margin-left: 60%;">$4</span></h6>
+</div><hr>
+<div class="row">
+    <h6 >Total Amount: <span style="margin-left:54% ;">${{grandTotal}}</span> </h6>
+</div>
+</ng-container>

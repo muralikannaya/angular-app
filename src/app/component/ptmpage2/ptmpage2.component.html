@@ -1,3 +1,100 @@
-<app-ptmheader></app-ptmheader>
-<p>ptmpage2 works!</p>
-<button routerLink="/ptmpage3" >move to payment2</button>
+<div class="row" style="width: 98%;margin-bottom: 5%;margin-left:1%;">
+    <div class="col-sm-8">
+        <app-ptmheader></app-ptmheader>
+        <div class="row" style="margin-top:10% ;">
+            <div class="col-sm-12">
+                <div class="container" style="padding-left: 9%;">
+                    <div class="row">
+
+
+
+                        <div class="accordion">
+                            <div class="card">
+                                <!-- <div class="car-header" type="button" (click)="myOpen()">haiiiii</div> -->
+                                <div class="card-header">
+                                    Customer Details
+                                </div>
+                                <div *ngIf="one">
+                                    <div class="card-body" style="display: inline-flex;">
+                                        <input formControlName="email" style="width: 30%;" type="text"
+                                            class="form-control" id="exampleInputEmail1" placeholder="First Name"><span
+                                            style="margin-left: 5px;"></span>
+                                        <input type="text" name="" style="width: 30%;" placeholder="Last Name"
+                                            class="form-control" id="" placeholder="Last Name"><span
+                                            style="margin-left: 5px;"></span>
+                                        <input type="text" name="" style="width: 30%;" placeholder="Last Name"
+                                            class="form-control" id="" placeholder="Mail Id"> <br>
+
+                                    </div>
+                                    <button (click)="myOpen1()" class="btn btn-primary">Next</button>
+                                </div>
+                            </div>
+                            <!-- <div class="card-body collapse show"  *ngIf="murali">murali</div> -->
+                        </div>
+                        <div class="accordion" >
+                            <div class="card">
+                                <div class="card-header">
+                                    Shipping Address
+                                </div>
+                                <div class="card-body" *ngIf="two">
+                                    <div style="display: inline-flex;width: 100%;margin-bottom: 8px;">
+                                        <label for="text">Address</label>
+                                        <input style="width: 78%;margin-left:10%" class="form-control" type="text"
+                                            name="" id="">
+                                    </div><br>
+
+                                    <div style="display: inline-flex;width: 100%;margin-bottom: 8px;">
+                                        <label for="text">Landmark</label>
+                                        <input style="width: 78%;margin-left:8%" class="form-control" type="text"
+                                            name="" id="">
+                                    </div><br>
+                                    <div style="display: inline-flex;width: 100%;margin-bottom: 8px;">
+                                        <label for="text">Street Name</label>
+                                        <input style="width: 78%;margin-left:6%" class="form-control" type="text"
+                                            name="" id="">
+                                    </div><br>
+                                    <div style="display: inline-flex;width: 100%;margin-bottom: 8px;">
+                                        <label for="text">Phone Number</label>
+                                        <input style="width: 78%;margin-left:3%" class="form-control" type="text"
+                                            name="" id="">
+                                    </div><br>
+                                    <div style="display: inline-flex;width: 100%;">
+                                        <label for="text">Pin Code</label>
+                                        <input style="width: 78%;margin-left:9%" class="form-control" type="text"
+                                            name="" id="">
+                                    </div>
+                                    <div style="width: 100%;text-align: right;">
+                                        <button (click)="myOpen2()" style="margin-right: 30px;
+                                        margin-top: 2%;" class="btn btn-primary">Next</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div  class="accordion"  *ngIf="three">
+                            <div class="card">
+                                <div class="card-header">Shipping Method</div>
+                                <div class="card-body">
+                                    <input type="radio"> Normal Shipping 
+                                    <input type="radio"> Express Shipping 
+                                     <button routerLink="/ptmpage3" class="btn btn-primary" style="margin-left: 48%;">Next</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-sm-4">
+        <app-slidecart></app-slidecart>
+    </div>
+</div>

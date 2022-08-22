@@ -8,8 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class Ptmpage3Component implements OnInit {
 
   constructor() { }
+  public cardThing: boolean = false ;
+  public upiThing: boolean = false ;
 
   ngOnInit(): void {
   }
 
+
+  atmCard() {
+    this.cardThing = true;
+    this.upiThing = false;
+  }
+
+  upiOpen() {
+    this.cardThing = false;
+    this.upiThing = true;
+  }
 }

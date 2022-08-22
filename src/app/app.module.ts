@@ -19,6 +19,7 @@ import { Ptmpage1Component } from './component/ptmpage1/ptmpage1.component';
 import { Ptmpage2Component } from './component/ptmpage2/ptmpage2.component';
 import { Ptmpage3Component } from './component/ptmpage3/ptmpage3.component';
 import { Ptmpage4Component } from './component/ptmpage4/ptmpage4.component';
+import { SlidecartComponent } from './component/slidecart/slidecart.component';
 
 
 
@@ -39,6 +40,7 @@ import { Ptmpage4Component } from './component/ptmpage4/ptmpage4.component';
     Ptmpage2Component,
     Ptmpage3Component,
     Ptmpage4Component,
+    SlidecartComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +53,7 @@ import { Ptmpage4Component } from './component/ptmpage4/ptmpage4.component';
     ProductsComponent,LoginComponent, SignupComponent,FooterComponent,ImagepageComponent, PtmheaderComponent,Ptmpage1Component,
     Ptmpage2Component,
     Ptmpage3Component,
-    Ptmpage4Component,]
+    Ptmpage4Component,SlidecartComponent,]
 })
 export class AppModule { }
 
