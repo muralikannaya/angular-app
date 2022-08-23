@@ -1,3 +1,55 @@
 <app-ptmheader></app-ptmheader>
 
-<p>ptmpage4 works!</p>
+<div class="container" style="margin-top: 5%;margin-bottom: 3%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div style="text-align: center;"><i style="color: green;" class="fa-solid fa-4x fa-circle-check"></i>
+                    <h3 style="margin-top:25px;color: #4ea6bc;"><span><img style="width: 17%;"
+                                src="../assets/images/thankyou.jpg" alt=""></span> Your Order is Confirmed Confirmed
+                    </h3>
+                    <button routerLink="/products" style="margin-top:25px" class="btn btn-primary">Shop More</button>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <ng-container *ngIf="products.length !=0">
+                    <div>
+                        <div>
+                            <h5>Order Details</h5>
+                            <hr>
+                            <div><img *ngFor="let item of products; let i = index" style="width: 30%;"
+                                    src="{{item.image}}" alt=""></div>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <td style="width: 50%;">
+                                    <h6>Order id :</h6>
+                                </td>
+                                <td>
+                                    <h6>#4367491</h6>
+                                </td>
+                            </tr><br>
+                            <tr>
+                                <td style="width: 50%;">
+                                    <h6>Amount Paid</h6>
+                                </td>
+                                <td>
+                                    <h6>${{grandTotal}}</h6>
+                                </td>
+                            </tr><br>
+                            <tr>
+                                <td style="width: 50%;">Shiping Address</td>
+                                <td>1-68, palavalasa village, burja mandal, srikakulam, 532445</td>
+                            </tr><br>
+                            <tr>
+                                <td style="width: 50%;">Date of Delivery:</td>
+                                <td>Sep 5th Tuesday</td>
+                            </tr>
+                        </table>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>

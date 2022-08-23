@@ -27,4 +27,9 @@ export class ImageService {
   }
 
     // images get by image click
+
+    // iconStyle = 'number';
+    // next() {
+    //   this.iconStyle = 'numberActive ';
+    // }
 }

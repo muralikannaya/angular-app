@@ -7,17 +7,24 @@
            
            
             <div class="form-group">
-                <input id="searchbar" [(ngModel)]="searchTerm" (keyup)="search($event)"  placeholder="search items here">
+                <input class="form-control"  id="searchbar" [(ngModel)]="searchTerm" (keyup)="search($event)"  placeholder="search items here">
             </div>
             <span><i id="serch-icon" class="fas fa-search  "></i></span>
         </div>
-        <a style="text-decoration: none; font-size: 24px;color: white;" routerLink="/login" >
-            <i class="bi bi-box-arrow-in-right"></i>
-            LogIn</a>
-       <button  routerLink="/cart" class="btn">
-        <i id="carticon" class="fas fa-2x fa-cart-plus"></i>
-        <div style="font-size: 10px;" id="noofitems" class="badge bg-danger">{{totalItem}}</div>
-       </button>
+        <div>
+            <a style="text-decoration: none; font-size: 24px;color: white;margin-right: 9px;" routerLink="/products" >
+                <i class="fa-solid fa-house-chimney"></i>
+                Home</a>
+            <a style="text-decoration: none; font-size: 24px;color: white;margin-right: 9px;" routerLink="/login" >
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                LogIn</a>
+           <button  routerLink="/cart" class="btn">
+            <i id="carticon" class="fas fa-2x fa-cart-plus"></i>
+            <div style="font-size: 10px;" id="noofitems" class="badge bg-danger">{{totalItem}}</div>
+           </button>
+
+        </div>
+       
     </div>
    
  

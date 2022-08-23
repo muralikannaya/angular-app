@@ -21,9 +21,20 @@ export class ImagepageComponent implements OnInit {
 
   addtocart(item: any){
     this.cartService.addtoCart(item);
-   
-    
+}
+
+inc(item:any){
+
+  this.cartService.inc(item);
+  
 
 }
+
+dec(item:any){
+
+this.cartService.dec(item);
+
+}
+
 
 }

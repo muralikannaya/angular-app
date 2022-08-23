@@ -24,7 +24,7 @@
                         <td style="width: 8%;">{{item.price}}</td>
                         <td><button type="button" class="btn" (click)="dec(item)"><i class="fa fa-minus"></i></button>{{item.quantity}}<button type="button" class="btn" (click)="inc(item)"><i class="fa fa-plus"></i></button></td>
                         
-                        <td style="width: 12%;">{{item.total}}</td>
+                        <td style="width: 12%;">{{item.price * item.quantity}}</td>
                         <td><button (click)=" removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                     <tr>

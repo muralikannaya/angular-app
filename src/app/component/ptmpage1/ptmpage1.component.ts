@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder,FormGroup} from '@angular/forms';
 import { Router } from '@angular/router';
+import { ImageService } from 'src/app/service/image.service';
 
 @Component({
   selector: 'app-ptmpage1',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class Ptmpage1Component implements OnInit {
   public loginForm!: FormGroup
-  constructor(private formBuilder : FormBuilder, private http:HttpClient, private router:Router) { }
+  constructor(private formBuilder : FormBuilder, private http:HttpClient, private router:Router, private imgService:ImageService) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -34,6 +35,10 @@ export class Ptmpage1Component implements OnInit {
      }
     })
    }
+
+  //  next() {
+  //   this.imgService.next();
+  //  }
 }
 
 

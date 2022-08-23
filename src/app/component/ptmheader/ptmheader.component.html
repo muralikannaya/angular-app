@@ -1,34 +1,33 @@
 
 <div class="container">
   <section class="step-indicator">
-      <div class="step step1 active">
+      <div class="step step1 active" >
         <div class="stage">
-          <div id="number"  class="number">1</div>
+          <div id="number"  class="number" [routerLink]="['/ptmpage1']"   [routerLinkActive]="['is-active']">1</div>
         </div>
         <p>Login</p>
       </div>
     <div class="indicator-line "></div>
-    <div class="step step2">
+    <div class="step step2" >
       <div class="stage">
-        <div id="number" [ngClass]="[iconStyle]">2</div>
+        <div id="number" class="number" [routerLink]="['/ptmpage2']"  [routerLinkActive]="['is-active']">2</div>
       </div>
-      <p>Shipping</p>
+      <p  [routerLink]="['/ptmpage2']" [routerLinkActive]="['is-activename']"  >Shipping</p>
     </div>
-    <div class="indicator-line"></div>
+    <div class="indicator-line" ></div>
     <div class="step step3">
       <div class="stage">
-        <div id="number"  class="number">3</div>
+        <div id="number"  class="number"  [routerLink]="['/ptmpage3']"  [routerLinkActive]="['is-active']">3</div>
       </div>
        <p>Payment</p>
     </div>
     <div class="indicator-line"></div>
     <div class="step step3">
       <div class="stage">
-        <div id="number"  class="number">4</div>
+        <div   class="number" [routerLink]="['/ptmpage4']"  [routerLinkActive]="['is-active']">4</div>
       </div>
        <p>completed</p>
     </div>
   </section>
 </div>
 
-<button   (click)="next()">next</button>

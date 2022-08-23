@@ -12,10 +12,13 @@ export class Ptmpage3Component implements OnInit {
   public upiThing: boolean = false ;
   public netThing: boolean = false ;
   public enterOtp : boolean = false;
+  public cardOtp : boolean = false;
 
   ngOnInit(): void {
   }
-
+  cardOtpOpen() {
+    this.cardOtp = true;
+  }
 
   atmCard() {
     this.cardThing = true;
