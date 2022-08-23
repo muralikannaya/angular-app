@@ -9,8 +9,10 @@ export class CartService {
   public productList = new BehaviorSubject<any>([]);      // this is for number items in cart after click add to cart
   public search = new BehaviorSubject<string>("");  /* ( this behaviour is both observable and emmitable it) this  is for seaching 
    string value is get from header input and  pass the value into products component to filter */
-
+  public sessionStorage : any =[];
+  // public suserStorage : any = [];
   constructor() { }
+   suserStorage = this.sessionStorage;
   getProducts(){
    return this.productList.asObservable();
   }

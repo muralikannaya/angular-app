@@ -29,7 +29,7 @@ export class Ptmpage1Component implements OnInit {
      if(user){
       alert("Login Success");
       this.loginForm.reset();
-      this.router.navigate(['products'])
+      this.router.navigate(['ptmpage2'])
      } else {
       alert("user not found")
      }

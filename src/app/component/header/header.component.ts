@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
 
   public totalItem : number = 0;
   public searchTerm : string = '';
+  public userName : string = '';
+  public suserStorage : any = [];
   constructor(private cartService : CartService, private router:Router) { }
 
   ngOnInit(): void {
@@ -19,6 +21,8 @@ export class HeaderComponent implements OnInit {
     .subscribe(res=>{
      this.totalItem = res.length;
     })
+
+    this.userName  = this.cartService.suserStorage; 
   }
    
   search(event:any) {
